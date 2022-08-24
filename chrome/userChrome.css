@@ -1,0 +1,189 @@
+:root {
+	--dark-colour: rgb(28, 27, 34);
+	/*--grad-colour: linear-gradient(315deg, #8fbcbb 0%, #a3be8c 74%);*/
+	--grad-colour: linear-gradient(-45deg, #f27154, #5e33ff);
+	--tab-block-margin: 2px 2px !important;
+	/*--buttons-destructive-hover-bgcolor: grey !important;*/
+	/*--tab-border-radius: 1rem !important;*/
+	--toolbar-bgcolor: var(--dark-colour) !important;
+	--lwt-toolbar-field-focus: var(--dark-colour) !important;
+	--button-hover-bgcolor: var(--dark-colour) !important;
+
+	/*URLBAR FOCUS COLOUR*/
+	--focus-outline-color: var(--dark-colour) !important;
+
+	/*DROPDOWN MENU*/
+	--arrowpanel-background: var(--dark-colour) !important;
+
+	--chrome-content-separator-color: lightcoral !important;
+}
+
+:is(menupopup, panel)[type="arrow"] {
+	/*DROPDOWN PANEL BORDER*/
+	--panel-border-color: var(--dark-colour) !important;
+}
+
+* {
+	font-family: "Ellograph CF";
+	font-weight: bold;
+	font-stretch: expanded;
+	font-size: 11px;
+}
+
+/*.tabbrowser-tab[selected] {
+	background: lightcyan !important;
+}*/
+
+#urlbar-background {
+	background: var(--dark-colour) !important;
+}
+
+.titlebar-color {
+	background: var(--dark-colour) !important;
+}
+.tab-background {
+ 	background-image: var(--grad-colour) !important;
+ 	width: 0% !important;
+ 	background-size: 100% 12% !important;
+ 	border-radius: 0px !important;
+ 	/*background-position: 0% 90% !important;*/
+}
+.tab-background[selected=true] {
+ 	background-image: var(--grad-colour) !important;
+ 	width: 100% !important;
+	transition: width 300ms ease-in-out !important;
+}
+.titlebar-max {
+	list-style-image: url("./fluent/collapse-arrow.png") !important;
+}
+.titlebar-restore {
+	list-style-image: url("./fluent/expand-arrow.png") !important;
+}
+.titlebar-min {
+	list-style-image: url("./fluent/subtract.png") !important;
+}
+.titlebar-close {
+	list-style-image: url("./fluent/close.svg") !important;
+}
+
+.titlebar-buttonbox {
+    position: relative;
+    margin-right: 0px;
+	margin-top: -0px !important;
+}
+.titlebar-button:hover {
+	background: none !important;
+/*	transform: rotate(45deg) !important;
+	transition: transform 100ms ease-in-out !important;*/
+}
+.browser-toolbar {
+    background: var(--dark-colour) !important;
+}
+
+.toolbarbutton-icon[label="Reload"] {
+	border-radius: 50% !important;
+	padding: 6px !important;
+	margin: 0 !important;
+}
+.toolbarbutton-icon[label="Reload"]:hover {
+	transform: rotate(180deg) !important;
+	transition: transform 300ms ease-in-out !important;
+}
+
+.subviewbutton:hover {
+	background-color: inherit !important;
+	background-image: linear-gradient(45deg, #f27154, #5e33ff) !important;
+	background-size: 100% 100% !important;
+ 	background-repeat: no-repeat;
+ 	background-position: 0% 100% !important;
+ 	border-radius: 5px !important;
+}
+
+/*background: #abe9cd !important;
+background-position: 25% 75% !important;
+background-size: 50% !important; */
+/*background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%) !important; */
+
+#forward-button, 
+#appMenu-fxa-status2, 
+#appMenu-fxa-separator {
+	display: none !important;
+}
+
+/*#urlbar-input-container:active {
+	background-image: var(--grad-colour) !important;
+ 	background-size: 100% 10% !important;
+ 	background-repeat: no-repeat;
+ 	background-position: 0% 100% !important;
+ 	border-radius: 0px !important;
+ }*/
+
+#sidebar-title {
+	font-size: 1.5rem !important;
+}
+
+#sidebar-box {
+	background: var(--dark-colour) !important;
+}
+#sidebar-header {
+	background-image: var(--grad-colour) !important;
+ 	background-size: 100% 5% !important;
+ 	background-repeat: no-repeat;
+ 	background-position: 0% 100% !important;
+}
+.sidebar-panel {
+	/*background: var(--dark-colour) !important;*/
+	background: var(--dark-colour) !important;
+}
+.sidebar-panel::webkit-scrollbar {
+	width: 5px !important;
+}
+
+#viewButton menupopup[hasbeenopened="true"] {
+	background: var(--dark-colour) !important;
+}
+#search-box {
+	background: var(--dark-colour) !important;
+	color: black !important;
+}
+
+#sidebar-search-container {
+}
+
+#appMenu-multiView {
+}
+#appMenu-popup {
+}
+.tab-content[selected] .tab-text {
+	/*color: black !important;*/
+}
+#navigator-toolbox {
+	border: 0 !important;
+}
+#browser {
+}
+.close-icon[selected] {
+	/*list-style-image: url("./close.svg") !important;*/
+}
+
+/*TOOLBAR BUTTONS*/
+/*#back-button { 
+	list-style-image: url("./fluent/back.png") !important;
+}
+#reload-button {
+    list-style-image: url("./fluent/reload.png") !important;
+}
+#nav-bar-overflow-button {
+    list-style-image: url("./fluent/more-tools.png") !important;
+}
+#PanelUI-menu-button {
+    list-style-image: url("./fluent/menu.png") !important;
+}
+#downloads-button, #downloads-indicator-progress-outer {
+    list-style-image: url("./fluent/download.png") !important;
+}*/
+.tab-icon-stack .tab-icon-image[src="chrome://branding/content/icon32.png"]{
+	background:url("./firefox-focus.png")!important;
+	background-size: 16px !important;
+	padding-left: 16px !important;
+}

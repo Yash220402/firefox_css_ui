@@ -1,0 +1,76 @@
+:root {
+	--nord-dark: rgb(28,27,34);
+	--nord-white: #d8dee9;
+}
+:root{ 
+    /*scrollbar-face-color: red !important;*/
+    /*scrollbar-track-color: var(--nord-dark)	!important;*/
+    /*scrollbar-color: var(--nord-white) var(--nord-dark)	!important;*/
+    scrollbar-width: thin !important;
+}
+
+@-moz-document url("about:newtab"),
+url("about:home"), 
+url("about:blank") {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+    body.activity-stream { 
+    }
+    .outer-wrapper.newtab-experience .search-wrapper .search-inner-wrapper {
+        display: none !important;
+    }
+    .outer-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+		background: var(--nord-dark) !important;
+        /* background-image: url("./bg.jpg") !important;
+        background-size: 300% !important;
+        background-size: 100% 100% !important;
+        background-position: 50% 0% !important; */
+    }
+    .logo {
+        background: url("./firefox-focus.png") !important;
+        background-size: 100% 100% !important;
+    }
+    .logo, .wordmark {
+        margin: 0.5rem !important;
+    }
+    .wordmark {
+        display: none !important;
+    }
+    .icon-settings {
+        display: none !important;
+    }
+}
+@-moz-document url("about:preferences"),
+url("about:preferences#general"),
+url("about:preferences#home"),
+url("about:preferences#search"),
+url("about:preferences#privacy"),
+url("about:preferences#sync"),
+url("about:addons"),
+url("about:profiles") {
+
+    :root {
+        --in-content-primary-button-background: transparent;
+    }
+
+    * {
+        font-family: "JetBrains Mono" !important;
+        font-stretch: expanded !important;
+        font-weight: bold !important;
+        font-size: 11px !important;
+    }
+    /*#sidebar, .navigation {
+        background-image: linear-gradient(to top, #f27154, #5e33ff) !important;
+        background-size: 3% 50% !important;
+        background-repeat: no-repeat !important;
+        background-position: 0% 50% !important;*/
+    .category:active {
+        background-image: linear-gradient(45deg, #f27154, #5e33ff) !important;
+    }
+}
